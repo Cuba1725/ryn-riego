@@ -772,7 +772,7 @@ input, textarea{
 
    .menu li a {
        color: #000;
-       font-size: 10px;
+       font-size: 25px;
    }
 
    .menu li {
@@ -789,6 +789,15 @@ input, textarea{
     padding-top: 15px;
    }
 
+   .contenedorMenu {
+       position: fixed;
+       z-index: 998;
+       background: var(--fondoClaro);
+       top: 0;
+       margin: 0;
+       padding: 10px;
+   }
+
    .contenedorMenu .nameLogo {
        width: 100%;
        margin: auto;
@@ -801,19 +810,18 @@ input, textarea{
 
     .bg-principal {
         width: 100%;
-        margin: 0;
+        margin-top: 80px;
         padding: 0;
     }
 
     .info h1 {
-        font-size: 20px;
-        width: 100%;
-        margin-top: 25px;
+        font-size: 30px;
+        width: 100%;        
         padding: 0;
     }
 
     .info p {
-        font-size: 15px;
+        font-size: 20px;
         padding: 0;
     }
     .cont {
