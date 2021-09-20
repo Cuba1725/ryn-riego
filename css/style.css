@@ -554,8 +554,8 @@ input, textarea{
 }
 
 
-/*--------@Media 720---------*/
-@media (min-width: 320px) and (max-width: 720px) {
+/*--------@Media 768---------*/
+@media (max-width: 768px) {
 
     html {
         scroll-behavior: smooth;
@@ -714,9 +714,9 @@ input, textarea{
     }
 }
 
-/*---------@Media 320px-----------*/
+/*---------@Media 400px-----------*/
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
     html {
         scroll-behavior: smooth;        
         margin: 0;
@@ -752,6 +752,10 @@ input, textarea{
        background-color: rgba(3, 177, 55,0.9);
        transition: transform 0.3s ease; 
        transform: translate(0 , -100%);
+   }
+
+   .banner {
+       display: none;
    }
 
    .menu.is-active{
@@ -831,8 +835,7 @@ input, textarea{
 
     .contentServicios{
         margin-top: 20px;
-        width: 100%;
-        padding: 0 20px;        
+        width: 100%;      
     }
 
     .contImagenes {        
@@ -840,6 +843,7 @@ input, textarea{
         flex-direction: column;        
         vertical-align: middle;        
         width: 100%;
+        padding: 0;
     }
 
     .image {
