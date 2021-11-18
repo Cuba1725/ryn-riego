@@ -1,23 +1,19 @@
-const images = document.querySelectorAll('.grid-item');
-const containerImage = document.querySelector('.container-img');
-const imageContainer = document.querySelector('.img-show');
-const cerrar = document.querySelector('.fa-times-circle');
+//GALERIA
 
-images.forEach(image => {
-    image.addEventListener('click', ()=> {
-        
-        addImage(image.getAttribute('src'))
+const galeria = document.querySelectorAll(".grid-item");
+const show = document.querySelector('.imgShow');
+const prevImg = show.querySelector('.img');
+
+document.querySelectorAll('.grid .grid-item img').forEach((elemento) => {
+    const ruta = elemento.getAttribute('src');
+   
+    elemento.addEventListener('click', () => {
+        show.classList.add('show');
+        document.querySelector('.imgShow img').src = ruta;
     });
 });
 
-const addImage = (src) =>{
-    containerImage.classList.toggle('mover');
-    imageContainer.classList.toggle('show');
-    imageContainer.src = src
-}
-
-cerrar.addEventListener('click', ()=> {
-    containerImage.classList.toggle('mover');
-    imageContainer.classList.toggle('show');
+cerrar.addEventListener('click', e => {
+    show.classList.remove('show');
 })
 
